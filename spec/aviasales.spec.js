@@ -8,19 +8,19 @@ describe("Авторизация", () => {
     let page;
 
     beforeEach(async () => {
-        await run("https://www.aviasales.ru");
+      page =  await run("https://www.aviasales.ru");
     });
 
     afterEach(async () => {
-        await stop();
+       page = await stop();
     });
 
     it("Найти билеты", async () => {
         await app().Main().findTickets("Казань", "Венеция");
         assert.strictEqual(
-            profileNameText,
-            "",
-            "Имя пользователя не равно demo"
+            await app().Home().getTicket()  .selectTicketText,
+            "Выбрать билет",
+            "найден и выбран билет"
         );
     });
 });

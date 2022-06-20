@@ -1,11 +1,11 @@
 import Mainpage from "./mainPage";
-//import Home from "./homePage";
-//import RightMenu from "../elements/rightMenu";
+import Home from "./homePage";
+import SelectTicket from "../elements/selectTicket";
 
 const app = () => ({
     Main: () => ({ ...Mainpage }),
     Home: () => ({ ...Home }),
-    selectTicket: () => ({ ...selectTicket })
+    SelectTicket: () => ({ ...SelectTicket })
 });
 
 export default app;

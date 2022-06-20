@@ -1,8 +1,9 @@
 import app from "./index";
+import SelectTicket from "../elements/selectTicket";
 
 const Home = {
-    getPrifileName: async (page) => {
-        const btnChoose = await app().selectTicket().buyTicket(page);
+    getTicket: async () => {
+        const btnChoose = await app().SelectTicket().getTicket();
         return btnChoose;
     }
 };
