@@ -1,0 +1,28 @@
+{
+  "name": "homework13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha specs/**/*.spec.js -timeout 50000 --require @babel/register"
+  },
+  "qa": "mocha specs/**/*.spec.js -timeout 50000 --require @babel/register",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YLandysh/homework13.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YLandysh/homework13/issues"
+  },
+  "homepage": "https://github.com/YLandysh/homework13#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "@babel/register": "^7.17.7",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "playwright": "^1.22.2"
+  }
+}
